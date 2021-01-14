@@ -1,0 +1,81 @@
+<body style="background-color: #f1f2f6;">
+        <app-header page="Checkout"></app-header>
+    <div class="container mt-2">
+    
+        <ul class="list-group">
+            <mat-card class="mt-2">
+            <li class="list-group-item mb-2"  style="border: 1px solid  lightgray;" *ngFor="let service of selectedServices;let i = index">
+                <div class="row">
+                    <div class="col-4 pl-0 m-auto">
+                        <img src="../../../assets/services/carAcRepair.svg" class="img-fluid">
+                    </div>
+                    <div class="col-6 pl-0">
+                        <h3 class="mb-0">{{service.title}}</h3>
+                        <h3 class="mb-0">Rs.{{service.price}}</h3>
+                        <h3 class="mb-0">{{service.garage}}</h3>
+    
+                    </div>
+                    <div class="col-2 pl-0 m-auto text-right">
+                        <span matRipple>
+                            <button mat-button color="warn" style="font-size: 30px;" (click)="deleteService(i)">&times;</button>
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </mat-card>
+            <li class="list-group-item p-1 mt-2 mb-2">
+                <textarea class="form-control mb-2" id="instruction" rows="2" placeholder="Add Service Instructions(optional)"></textarea>
+            </li>
+        </ul>
+    
+    
+    
+        <mat-card matRipple class="mb-2 text-danger">
+            <button mat-raised-button (click)="openDialog()" style="background-color: rgba(29, 209, 161,1);margin-left: 90px;color: white;">Add Other Service &rarr;</button>
+        </mat-card>
+    
+        <mat-card matRipple class="mb-2 text-danger">
+            <button mat-raised-button style="background-color: rgba(29, 209, 161,1);margin-left: 100px;color: white;">Apply Coupon &rarr;</button>
+        </mat-card>
+    
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h1 class="m-0">Bill Detail</h1>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-6">
+                        Total
+                    </div>
+                    <div class="col-6 text-right">
+                        Rs.10,000
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h3>You Pay</h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <h3>Rs.10,000</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    
+    
+    
+    </div>
+    
+    
+    
+    <div matRipple id="footer" class="text-danger" style="display:flex;flex-direction: row;">
+        <div class="col-8 text-dark">
+            <h2 class="m-0 ml-3">Rs. 10,000</h2>
+            <p class="m-0 ml-3"><button mat-button style="color:  rgba(29, 209, 161,1);">View Details</button></p>
+    
+        </div>
+        <div class="col-4 text-right m-auto">
+            <button class="text-dark text-bold" mat-raised-button style="background-color: rgba(29, 209, 161,1);" (click)="selectDateTime()"><span style="color:white;" routerLink="/servicepayment">NEXT  &rarr;</span></button>
+        </div>
+    </div>
+    </body>

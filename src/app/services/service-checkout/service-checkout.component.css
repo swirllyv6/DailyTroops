@@ -1,0 +1,25 @@
+#instruction {
+    border: none;
+}
+
+#instruction:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#footer {
+    /* background-color: #e9ecef; */
+    background-color: rgba(250, 250, 250, 0.9);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 4.1rem;
+}
+
+.mat-raised-button.mat-orange {
+    background-image: linear-gradient(to right, #10ac84, #00d2d3);
+}
+
+.container-fluid {
+    margin-bottom: 3rem;
+}
