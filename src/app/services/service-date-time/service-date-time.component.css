@@ -14,7 +14,7 @@
 div.date {
     background-color: white;
     border: 1px solid black;
-    border-radius: 20px;
+    
     padding: 8px 18px 8px 18px;
     font-size: 15px;
     font-weight: 500;
@@ -51,7 +51,7 @@ div.date h3 {
 div.time {
     background-color: white;
     border: 1px solid black;
-    border-radius: 20px;
+    
     padding: 8px 18px 8px 18px;
     font-size: 15px;
     font-weight: 500;

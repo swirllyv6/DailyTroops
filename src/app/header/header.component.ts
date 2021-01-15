@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() pageName: string;
+  @Input() page: string;
 
   constructor(private location: Location , private router:Router) { 
     
