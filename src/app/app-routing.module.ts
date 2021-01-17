@@ -5,6 +5,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OrderHistoryDetailsComponent } from './order-history/order-history-details/order-history-details.component';
+import { OrderHistoryListComponent } from './order-history/order-history-list/order-history-list.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceCheckoutComponent } from './services/service-checkout/service-checkout.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   },
   { path: 'servicedetail/:serviceId/:garageId', component: ServiceDetailComponent },
   { path: 'orderhistory', component: OrderHistoryComponent },
+  { path: 'orderlist', component: OrderHistoryListComponent },
   { path: 'orderdetail', component: OrderHistoryDetailsComponent },
   { path: 'servicepayment', component:ServicePaymentComponent },
   { path: 'login', component: LoginComponent },
