@@ -11,55 +11,66 @@
 
 
 
-                <div class="container" style="width: 100%">
+               
 
                     <div class="row">
 
                         <mat-card class="col-lg-5" style="margin: 10px;">
-
-                            <b style="font-weight: bold">ORDER ID : <br><br>
-                                Service Type : <br><br>
-                                Vehicle Name : <br><br>
-                                Grand Total : Rs. <br><br>
-                                Appointment Date : <br><br>
-
-
-
-                                <button mat-raised-button color="primary" style="margin-left: 90px;">View Order
-                                    Details</button>
-                                <br><br>
-
-                                <div class="alert alert-warning">
-                                    Payement Status :<br>
-                                    <button class='btn btn-block btn-danger'>Pending</button><br>
-
-                                    <button class='btn btn-block btn-success'>Done</button>
-                                    For Extra Services
-                                    <button class='btn btn-block btn-block btn-danger'>Pending</button><br>
-
-                                    For Extra Services
-                                    <button class='btn btn-block btn-block btn-success'>Done</button>
-
-                                    For Extra Services<br>
-
-                                    <button class='btn btn-dark btn-block'>N.A</button><br>
-
+                            <div class="row">
+                                <div class="col-8">
+                                    <b style="font-weight: bold">17th Jan, 2021</b>
                                 </div>
-                            </b>
-
-
-
+                                <div class="col-4">
+                                    <p style="font-size: smaller;color: gray;">1 SERVICE</p>
+                                </div>
+                            </div>
+                            <p style="font-size: smaller;">You can update status of all services on this date here</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button mat-raised-button style="background-color: #e74c3c;color: white;">SERVICE
+                                        STATUS <br><small>FOR 1 PENDING SERVICE</small> </button>
+                                </div>
+                                <div class="col-6">
+                                    <button mat-raised-button style="background-color: #1abc9c;color: white;">ORDER
+                                        STATUS<br><small>FOR 1 PENDING SERVICE</small> </button>
+                                </div>
+                            </div><br><br>
                         </mat-card>
 
-
-                        <h3 class='text-center' style='font-weight:bold;width:100%'>No Service History Found...!</h3>
+                          
+                        
 
                     </div>
 
-                </div>
+              
+                <mat-card>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 style="font-weight: 600;">Kadir Sheikh , 7972112804</h3>
+                                </div>
+                               
+                            </div>
 
+                          <p style="font-size: x-small;color: gray;">SERVICE DETAILS</p>
+                          <p style="font-size: small;font-weight: 600;">12:00 pm, Jan 17</p>
+                          <hr>
+                          <p style="font-size: x-small;color: gray;">SERVICE COST</p>
+                          <p style="font-size: small;font-weight: 600;">Rs. 500</p>
+                          <hr>
+                          <p style="font-size: small;color: gray;">Battery Service &#10005; 1</p>
+                          <div class="row">
+                            <div class="col-4">
+                                <button mat-stroked-button disabled style="background-color: #f1f2f6;color: #e15f41;">NOT SERVICED</button>
+                            </div>&nbsp;
+                            <div class="col-4">
+                                <button mat-stroked-button disabled style="background-color: #f1f2f6;color: #e15f41;">NOT PAID</button>
+                            </div>
+                        </div><br><br>
+                                 <button routerLink="/orderdetail" mat-raised-button color="primary" style="background-color:rgba(29, 209, 161,1);margin-left: 90px;">View Order
+                                Details</button>
+                </mat-card>
 
-
+                <h3 class='text-center' style='font-weight:bold;width:100%'>No Service History Found...!</h3>
                 <!-- Tab panes -->
 
             </div>
