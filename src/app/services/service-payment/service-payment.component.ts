@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ServicePaymentComponent implements OnInit {
   paymentStatus:boolean = true;
-  isLoading:boolean = true
+  isLoading:boolean = true;
   constructor(public activateRoute: ActivatedRoute) { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
+
 @Component({
   selector: 'app-service-date-time',
   templateUrl: './service-date-time.component.html',
@@ -34,16 +34,9 @@ export class ServiceDateTimeComponent implements OnInit {
       time: [
         10, 11, 12, 1, 2, 3, 4, 5
       ]
-    },
-    {
-      date: 20,
-      day: 'Fri',
-      time: [
-        10, 11, 12, 1, 2, 3, 4, 5
-      ]
     }
   ];
-  constructor(private _bottomSheetRef: MatBottomSheetRef<ServiceDateTimeComponent> ) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

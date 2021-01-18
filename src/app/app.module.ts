@@ -31,7 +31,7 @@ import { ServiceDetailComponent } from './services/service-detail/service-detail
 
 
 import { ServiceDailogLoaderComponent } from './services/service-dialog/service-dailog-loader/service-dailog-loader.component';
-
+import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { BannerComponent } from './dashboard/banner/banner.component';
 import { SelectServiceComponent } from './dashboard/select-service/select-service.component';
@@ -97,6 +97,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     NgxSkeletonLoaderModule.forRoot()
   ],
   providers: [AuthService, AuthGuard],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
+  ]
 })
 export class AppModule { }
