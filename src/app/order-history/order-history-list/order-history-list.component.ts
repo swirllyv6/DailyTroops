@@ -9,23 +9,28 @@ export class OrderHistoryListComponent implements OnInit {
 
   serviceData = [{
     title:"service 1",
-    price:400
+    price:400,
+    date:"17-01-2021"
   },
   {
     title:"service 1",
-    price:400
+    price:400,
+    date:"17-01-2021"
   },
   {
     title:"service 1",
-    price:400
+    price:400,
+    date:"17-01-2021"
   },
   {
     title:"service 1",
-    price:400
+    price:400,
+    date:"17-01-2021"
   },
   {
     title:"service 1",
-    price:400
+    price:400,
+    date:"17-01-2021"
   }]
 
   isLoading:boolean = true;
