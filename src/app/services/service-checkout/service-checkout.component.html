@@ -1,4 +1,4 @@
-<body style="background-color: #f1f2f6;">
+<body >
         <app-header page="Checkout"></app-header>
     <div class="container mt-2">
     
@@ -30,8 +30,8 @@
     
     
     
-        <mat-card matRipple class="mb-2 text-danger">
-            <i class="fa fa-cart-plus" aria-hidden="true" style="color:  rgba(29, 209, 161,1);font-size: xx-large;"></i><button mat-button style="color:  rgba(29, 209, 161,1);" (click)="openDialog()">Add Other Service </button>
+        <mat-card matRipple class="mb-2 text-danger" (click)="openDialog()">
+            <i class="fa fa-cart-plus" aria-hidden="true" style="color:  rgba(29, 209, 161,1);font-size: xx-large;"></i><button mat-button style="color:  rgba(29, 209, 161,1);" >Add Other Service </button>
             <i style="margin-left: 160px;color:  rgba(29, 209, 161,1);" class="fa fa-caret-right" aria-hidden="true"></i>
         </mat-card>
     
