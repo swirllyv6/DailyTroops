@@ -1,6 +1,6 @@
 <body >
         <app-header page="Checkout"></app-header>
-    <div class="container mt-2">
+    <div class="container" style="padding-bottom: 80px;">
     
         <ul class="list-group">
             <mat-card class="mt-2">
@@ -30,15 +30,14 @@
     
     
     
-        <mat-card matRipple class="mb-2 text-danger" (click)="openDialog()">
+        <mat-card matRipple class="d-flex flex-row mb-2 p-2 align-items-center" (click)="openDialog()">
             <i class="fa fa-cart-plus" aria-hidden="true" style="color:  rgba(29, 209, 161,1);font-size: xx-large;"></i><button mat-button style="color:  rgba(29, 209, 161,1);" >Add Other Service </button>
-            <i style="margin-left: 160px;color:  rgba(29, 209, 161,1);" class="fa fa-caret-right" aria-hidden="true"></i>
+            <i style="color:  rgba(29, 209, 161,1);" class="ml-auto mr-2 fa fa-caret-right" aria-hidden="true"></i>
         </mat-card>
     
-        <mat-card matRipple class="mb-2 text-danger">
-  
+        <mat-card matRipple class="d-flex flex-row mb-2 p-2 align-items-center">
             <i class="fa fa-gift" aria-hidden="true" style="color:  rgba(29, 209, 161,1);font-size: xx-large;"></i><button mat-button style="color:  rgba(29, 209, 161,1);">Apply Coupon</button>
-            <i style="margin-left: 185px;color:  rgba(29, 209, 161,1);" class="fa fa-caret-right" aria-hidden="true"></i>
+            <i style="color:  rgba(29, 209, 161,1);" class="ml-auto mr-2 fa fa-caret-right" aria-hidden="true"></i>
         </mat-card>
     
         <ul class="list-group">
@@ -118,11 +117,21 @@
                 </div>
             </li>
         </ul>
-        <app-service-date-time></app-service-date-time>
+        <!-- <app-service-date-time></app-service-date-time> -->
     </div>
-    <br><br><br><br><br>
+    
         
-    <div matRipple id="footer" class="text-danger" style="display:flex;flex-direction: row;background-color: #dfe4ea;">
+    <nav class="navbar fixed-bottom navbar-light bg-light" style="max-height: 80px;">
+        <a class="navbar-brand" href="#">
+            Rs. 10,000
+            <p class="p mb-0" style="color: rgba(29, 209, 161,1);">View Details</p>
+        </a>
+        <!-- <button class="text-dark text-bold" mat-raised-button style="background-color: rgba(29, 209, 161,1);" (click)="selectDateTime()"><span style="color:white;" routerLink="/servicepayment">Place Order<i style="margin-left: 5px;" class="fa fa-caret-right" aria-hidden="true"></i></span></button> -->
+        <button class="text-dark text-bold" mat-raised-button style="background-color: rgba(29, 209, 161,1);" (click)="selectDateTime()"><span style="color:white;">Place Order<i style="margin-left: 5px;" class="fa fa-caret-right" aria-hidden="true"></i></span></button>
+
+    </nav>
+
+    <!-- <div matRipple id="footer" class="text-danger" style="display:flex;flex-direction: row;background-color: #dfe4ea;">
         <div class="col-8 text-dark">
             <h2 class="m-0 ml-3">Rs. 10,000</h2>
             <p class="m-0 ml-3"><button mat-button style="color:  rgba(29, 209, 161,1);">View Details</button></p>
@@ -131,6 +140,6 @@
         <div class="col-4 text-right m-auto">
             <button class="text-dark text-bold" mat-raised-button style="background-color: rgba(29, 209, 161,1);" (click)="selectDateTime()"><span style="color:white;" routerLink="/servicepayment">Place Order<i style="margin-left: 5px;" class="fa fa-caret-right" aria-hidden="true"></i></span></button>
         </div>
-    </div>
+    </div> -->
 
     </body>

@@ -19,7 +19,7 @@ export class ServiceListComponent implements OnInit {
       this.serviceData = this._services.getServices(routeParams.service, {long: '192.168.43.240', lat: '192.168.43.240'})
       setTimeout(() => {
         this.isLoading = false
-      }, 3000);
+      }, 1000);
     });
     
   }
