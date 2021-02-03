@@ -1,15 +1,13 @@
-<nav class="navbar bg navbar-expand-lg fixed-top" style="background-color: rgba(29, 209, 161,1);">
+<nav class="navbar bg navbar-expand-lg sticky-top shadow" style="background-color: rgba(29, 209, 161,1);">
     <div class="container">
-        <div class="navbar-translate ">
-
+      <a class="navbar-brand mr-0" href="#">
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="back()">
-            <i style="font-size:20px;color:white;" class="fa">&#xf060;</i>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
           </button>
-          <span style="font-size: large;font-weight: 500;color: white;margin-left: 100px;" class="text-center">{{page}}</span>
-        </div>
-       
+          <span class="mr-auto text-white font-weight-bold">{{page}}</span>
+        </a>
     </div>
 </nav>
-<br><br><br>
+
 
 
