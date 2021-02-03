@@ -1,5 +1,5 @@
-<body style="background-color: #f1f2f6;">
-    <app-header></app-header>
+<body>
+    <app-header page="Login"></app-header>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 ml-auto mr-auto mt-2">
@@ -21,10 +21,11 @@
                         style="border-radius: 50px;">Login</button>
 
                 </form><br>
-                <a mat-button color="primary" style="color: red;margin-left: 100px;">Forget Password</a>
+                
                 <div id="errorMsg"></div>
-                <div class="forgot">
-                    <a mat-button color="primary" style="color: green;" class="ml-5">Not Yet Registered, Register
+                <div class="forgot text-center">
+                    <a mat-button color="primary" style="color: red;">Forget Password</a>
+                    <a mat-button color="primary" style="color: green;" routerLink="/register">Not Yet Registered, Register
                         Here!</a>
                 </div>
 

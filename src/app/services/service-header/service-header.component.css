@@ -15,8 +15,8 @@ a {
 
 .category-top td .category {
     background-color: white;
-    border: 1px solid #747d8c;
-    /* border-radius: 20px; */
+    border: 1px solid black;
+    border-radius: 20px;
     padding: 10px;
     font-size: 15px;
     font-weight: 500;
