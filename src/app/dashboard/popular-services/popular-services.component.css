@@ -1,0 +1,8 @@
+.heading-top span{
+    width: 90px;
+    height: 7px;
+    background-color: #1dd1a1;
+    /* background-image: linear-gradient(to right, #10ac84 , #00d2d3); */
+    display: inline-block;
+    border-radius: 2px;
+  }

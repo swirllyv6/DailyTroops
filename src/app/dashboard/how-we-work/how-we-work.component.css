@@ -1,0 +1,43 @@
+.line-1{
+    width: 10px;
+    height: 100px;
+    background-color: #1dd1a1;
+    display: inline-flex;
+    }
+    .circle{
+      display: inline-flex;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: white;
+      border: 5px solid #1dd1a1;
+      z-index: 1;
+    }
+      .how-we-work-icon{
+        border:0px;
+        background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+        background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+        background: linear-gradient(to bottom, #10ac84 0%,#00d2d3 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+      }
+
+
+      .heading-top span{
+        width: 90px;
+        height: 7px;
+        background-color: #1dd1a1;
+        /* background-image: linear-gradient(to right, #10ac84 , #00d2d3); */
+        display: inline-block;
+        border-radius: 2px;
+      }
+
+      #wrapper{
+        margin-left:auto;
+        margin-right:auto;
+        height:auto;
+        width:auto;     
+    }
+

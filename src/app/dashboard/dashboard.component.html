@@ -1,16 +1,15 @@
-
- <div style="height: 100vh;">
-    <mat-toolbar
-      style="background-color: rgba(29, 209, 161,1);">
-      <mat-toolbar-row>
-        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-          <mat-icon style="color: white;">menu</mat-icon>
-        </button>
-        <img src="../assets/logo.png" width="50px" style="margin-left: 10px"><span class="ml-2 mt-2">
-          <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:white;">OilyHandShake</p>
-        </span>
-        <span class="menu-spacer"></span>
-        <!-- <div fxShow="true" fxHide.lt-md style="margin-left: 600px;">
+<div style="height: 100vh;">
+  <mat-toolbar style="background-color: rgba(29, 209, 161,1);">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon style="color: white;">menu</mat-icon>
+      </button>
+      <img src="../assets/logo.png" width="50px" style="margin-left: 10px"><span class="ml-2 mt-2">
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:white;">
+          OilyHandShake</p>
+      </span>
+      <span class="menu-spacer"></span>
+      <!-- <div fxShow="true" fxHide.lt-md style="margin-left: 600px;">
   
           <a href="#" mat-button></a>
           <a href="#" mat-button>Admin Dashboard</a>
@@ -20,32 +19,39 @@
           <a href="#" mat-button>Profile</a>
           <a href="#" mat-button>Logout</a>
         </div> -->
-      </mat-toolbar-row>
-    </mat-toolbar>
-  
-    <mat-sidenav-container fxFlexFill>
-      <mat-sidenav #sidenav style="background-color: white;">
-        <mat-nav-list style="width: 150px;">
-          <a href="#" mat-list-item class="active">Admin</a>
-          <a href="/register" mat-list-item>Signup</a>
-          <a href="/login" mat-list-item>Login</a>
-          <!-- <a href="#" mat-list-item>Dashboard</a> -->
-          <a href="/profile" mat-list-item>Profile</a>
-          <a href="#" mat-list-item>Logout</a>
-        </mat-nav-list>
-      </mat-sidenav>
-      <mat-sidenav-content fxFlexFill>
-        <div style="height: 88vh;">
-            <div class="container-fluid">
+    </mat-toolbar-row>
+  </mat-toolbar>
 
-                <app-banner></app-banner>
-                <app-select-service></app-select-service>
-                <br><br><br><br>
-                <app-footer></app-footer>
-            </div>
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav style="background-color: white;">
+      <mat-nav-list style="width: 150px;">
+        <a href="#" mat-list-item class="active"><i class="fa fa-lock" aria-hidden="true"></i> &nbsp; Admin</a>
+        <a href="/register" mat-list-item><i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp;Signup</a>
+        <a href="/login" mat-list-item><i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp;Login</a>
+        <!-- <a href="#" mat-list-item>Dashboard</a> -->
+        <a href="/profile" mat-list-item><i class="fa fa-user" aria-hidden="true"></i> &nbsp;Profile</a>
+        <a href="#" mat-list-item><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;Logout</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <div style="height: 88vh;">
+        <app-banner></app-banner>
+        <div class="container-fluid">
+          
+            <mat-card style="background-color: white;">
+              <app-select-service></app-select-service><br>
+              <app-popular-services></app-popular-services><br>
+              <app-how-we-work></app-how-we-work><br>
+              <app-we-provide></app-we-provide>
+            </mat-card>
+            
+
+          <br><br><br><br>
+          <app-footer></app-footer>
         </div>
-      </mat-sidenav-content>
-  
-    </mat-sidenav-container>
-  
-  </div>
+      </div>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</div>
