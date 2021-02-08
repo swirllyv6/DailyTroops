@@ -32,3 +32,9 @@
         opacity: 0;
       }
     }
+
+    .btn-success{
+      background-color: #6bd098;
+      border-color: #6bd098;
+      color: #FFFFFF;
+    }
