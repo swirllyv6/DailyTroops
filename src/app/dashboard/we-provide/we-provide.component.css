@@ -1,0 +1,32 @@
+.features::-webkit-scrollbar {
+    display: none;
+}
+.features{
+    border: 0px;
+  }
+  .features td{
+    border:0px;
+    background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+    background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+    background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;    
+  }
+  .features td i{
+    width: 65px;
+    height: 65px;
+    font-size: xxx-large;
+
+  }
+  .heading-top span{
+    width: 90px;
+    height: 7px;
+    background-color: #1dd1a1;
+    /* background-image: linear-gradient(to right, #10ac84 , #00d2d3); */
+    display: inline-block;
+    border-radius: 2px;
+  }
+
+  

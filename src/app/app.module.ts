@@ -49,6 +49,9 @@ import { ServiceCouponComponent } from './services/service-coupon/service-coupon
 import { ServiceDetailLoaderComponent } from './services/service-detail/service-detail-loader/service-detail-loader.component';
 import { ServicePaymentLoaderComponent } from './services/service-payment/service-payment-loader/service-payment-loader.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PopularServicesComponent } from './dashboard/popular-services/popular-services.component';
+import { HowWeWorkComponent } from './dashboard/how-we-work/how-we-work.component';
+import { WeProvideComponent } from './dashboard/we-provide/we-provide.component';
 
 
 
@@ -84,7 +87,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ServiceSuccessComponent,
     ServiceCouponComponent,
     ServiceDetailLoaderComponent,
-    ServicePaymentLoaderComponent
+    ServicePaymentLoaderComponent,
+    PopularServicesComponent,
+    HowWeWorkComponent,
+    WeProvideComponent
 
   ],
   imports: [
